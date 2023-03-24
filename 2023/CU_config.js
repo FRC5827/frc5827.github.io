@@ -5,21 +5,21 @@ var config_data = `
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "Scouter Name",
+      "code": "s",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
     { "name": "Event",
-      "code": "Event",
+      "code": "e",
       "type": "event",
       "defaultValue": "Sammamish HS",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "Match Level",
+      "code": "l",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
@@ -30,14 +30,14 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "code": "match number",
+      "code": "m",
       "type": "match",
       "min": 1,
       "max": 100,
       "required": "true"
     },
     { "name": "Robot",
-      "code": "robot",
+      "code": "r",
       "type": "robot",
       "choices": {
         "r1": "Red-1",
@@ -50,13 +50,13 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "code": "team number",
+      "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "code": "Auton Start Position",
+      "code": "as",
       "type": "clickable_image",
       "filename": "2023/field_image.png",
       "clickRestriction": "one",
@@ -110,18 +110,6 @@ var config_data = `
       "showFlip": "false",
       "showUndo": "false",
       "shape": "circle 12 black red true"
-    },
-    { "name": "Scored in top row",
-      "code": "ScoreTop",
-      "type": "counter"
-    },
-    { "name": "Scored in middle row",
-      "code": "ScoreMidle",
-      "type": "counter"
-    },
-    { "name": "Scored in bottom row",
-      "code": "ScoreBottom",
-      "type": "counter"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
