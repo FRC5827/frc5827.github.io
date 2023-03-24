@@ -5,21 +5,21 @@ var config_data = `
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "scout name",
+      "code": "s",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
     { "name": "Event",
-      "code": "event name",
+      "code": "e",
       "type": "event",
       "defaultValue": "Sammamish HS",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "match level",
+      "code": "l",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
@@ -30,7 +30,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "code": "match number",
+      "code": "m",
       "type": "match",
       "min": 1,
       "max": 100,
@@ -79,13 +79,13 @@ var config_data = `
       "code": "aa",
       "type": "counter"
     },
-    { "name": "Expected # of objects scored",
-      "code": "Expected score",
-      "type": "number"
-    },
     { "name": "Mobility?",
       "code": "am",
       "type": "bool"
+    },
+    { "name": "Expected # of objects scored",
+      "code": "Expected score",
+      "type": "number"
     },
     { "name": "Docked",
       "code": "ad",
