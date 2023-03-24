@@ -69,7 +69,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Expected # of objects scored",
-      "code": "score",
+      "code": "Expected score",
       "type": "number"
     },
     { "name": "Floor pickup Cubes",
