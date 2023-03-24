@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Sammamish HS",
+      "defaultValue": "2023mnmi2",
       "required": "true",
       "disabled": "true"
     },
@@ -71,7 +71,7 @@ var config_data = `
       "dimensions": "9 4",
       "clickRestriction": "onePerBox",
       "toggleClick": "true",
-      "showFlip": "false",
+      "showFlip": "true",
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
@@ -82,10 +82,6 @@ var config_data = `
     { "name": "Mobility?",
       "code": "am",
       "type": "bool"
-    },
-    { "name": "Expected # of objects scored",
-      "code": "Expected score",
-      "type": "number"
     },
     { "name": "Docked",
       "code": "ad",
