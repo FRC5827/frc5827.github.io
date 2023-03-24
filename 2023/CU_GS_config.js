@@ -86,6 +86,7 @@ var config_data = `
     },
     { "name": "Expected # of objects scored",
       "code": "Expected score",
+      "gsCol": "expectScore",
       "type": "number"
     },
     { "name": "Crossed Cable",
