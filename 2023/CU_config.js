@@ -16,7 +16,7 @@ var config_data = `
       "type": "event",
       "defaultValue": "Sammamish",
       "required": "true",
-      "disabled": "false"
+      "disabled": "true"
     },
     { "name": "Match Level",
       "code": "Match Level",
