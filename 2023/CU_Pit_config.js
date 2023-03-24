@@ -61,11 +61,11 @@ var config_data = `
       "defaultValue":"x"
     },
     { "name": "# of Batteries",
-      "code": "nob",
+      "code": "# of batteries",
       "type": "number"
     },
     { "name": "Floor pickup Cones",
-      "code": "fco",
+      "code": "Floor pickup cones",
       "type": "bool"
     },
     { "name": "Expected # of objects scored",
@@ -85,13 +85,13 @@ var config_data = `
      "code": "Can reach mid",
      "type": "radio",
      "choices": {
-       "Ye": "Yes<br>",
-       "Na": "No<br>"
+       "Yes": "Yes<br>",
+       "No": "No<br>"
      },
-     "defaultValue":"Na"
+     "defaultValue":"No"
     },
     { "name": "Floor pickup Cubes",
-      "code": "fcu",
+      "code": "floor pickup cubes",
       "type": "bool"
     },
     { "name": "Cross Charging Station",
@@ -105,13 +105,13 @@ var config_data = `
       "maxSize": 250
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
+      "code": "scouting method",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
     { "name": "Comments",
-      "code": "co",
+      "code": "comment",
       "type": "text",
       "size": 20,
       "maxSize": 250
