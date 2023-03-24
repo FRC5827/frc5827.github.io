@@ -111,6 +111,18 @@ var config_data = `
       "code": "tfc",
       "type": "counter"
     },
+    { "name": "Scored on Top Row", 
+      "code": "sctr",
+      "type": "counter"
+    },
+    { "name": "Scored on Middle Row", 
+      "code": "scmr",
+      "type": "counter"
+    },
+    { "name": "Scored on Bottom Row", 
+      "code": "scbr",
+      "type": "counter"
+    },
     { "name": "Was Fed<br>Game Pieces",
       "code": "wf",
       "type": "bool"
