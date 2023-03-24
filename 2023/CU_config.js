@@ -129,6 +129,18 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Scored in top row",
+      "code": "ScoreTop",
+      "type": "counter"
+    },
+    { "name": "Scored in middle row",
+      "code": "ScoreMidle",
+      "type": "counter"
+    },
+    { "name": "Scored in bottom row",
+      "code": "ScoreBottom",
+      "type": "counter"
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
       "type": "counter"
