@@ -130,6 +130,16 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
+        { "name": "Cones Scored",
+      "code": "conesScored",
+      "gsCol":"conesTeleop",
+      "type": "counter"
+    },
+    { "name": "Cubes Scored",
+      "code": "cubesScored",
+      "gsCol": "cubesTeleop",
+      "type": "counter"
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "Feeder count",
       "gsCol": "feedCount",
