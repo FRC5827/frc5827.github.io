@@ -17,7 +17,7 @@ var config_data = `
       "code": "event name",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "Sammamish HS",
       "required": "true",
       "disabled": "true"
     },
