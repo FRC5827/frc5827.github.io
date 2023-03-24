@@ -17,12 +17,12 @@ var config_data = `
       "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "Sammamish HS",
+      "defaultValue": "2022carv",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "ml",
+      "code": "l",
       "gsCol": "level",
       "type": "level",
       "choices": {
