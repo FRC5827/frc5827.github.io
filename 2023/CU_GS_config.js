@@ -84,11 +84,6 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Expected # of objects scored",
-      "code": "Expected score",
-      "gsCol": "expectScore",
-      "type": "number"
-    },
     { "name": "Crossed Cable",
       "code": "acc",
       "gsCol": "autoCrossedCable",
