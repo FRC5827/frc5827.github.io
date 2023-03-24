@@ -83,6 +83,10 @@ var config_data = `
       "code": "am",
       "type": "bool"
     },
+    { "name": "Expected # of objects scored",
+      "code": "score",
+      "type": "number"
+    },
     { "name": "Docked",
       "code": "ad",
       "type":"radio",
