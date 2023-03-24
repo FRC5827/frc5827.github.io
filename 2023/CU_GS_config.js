@@ -131,6 +131,21 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
+    { "name": "Top position Scored<br>",
+      "code": "topScored",
+      "gsCol": "topScore",
+      "type": "counter"
+    },
+    { "name": "Mid position Scored<br>",
+      "code": "midScored",
+      "gsCol": "midScore",
+      "type": "counter"
+    },
+    { "name": "Bottom position Scored<br>",
+      "code": "bottomScored",
+      "gsCol": "botScore"
+      "type": "counter"
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
       "gsCol": "feedCount",
