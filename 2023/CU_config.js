@@ -107,6 +107,14 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Cones Scored",
+      "code": "conesScored",
+      "type": "counter"
+    },
+    { "name": "Cubes Scored",
+      "code": "cubesScored",
+      "type": "counter"
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "Feeder count",
       "type": "counter"
