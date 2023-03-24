@@ -22,7 +22,7 @@ var config_data = `
       "code": "Match Level",
       "type": "level",
       "choices": {
-        "qualification": "Quals<br>",
+        "quals": "Quals<br>",
         "playoffs": "Semifinals<br>",
         "finals": "Finals"
       },
