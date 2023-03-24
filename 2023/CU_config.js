@@ -26,7 +26,7 @@ var config_data = `
         "playoffs": "Semifinals<br>",
         "finals": "Finals"
       },
-      "defaultValue": "Qualification",
+      "defaultValue": "quals",
       "required": "true"
     },
     { "name": "Match #",
