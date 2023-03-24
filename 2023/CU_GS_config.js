@@ -17,7 +17,7 @@ var config_data = `
       "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "Sammamish",
+      "defaultValue": "Sammamish HS",
       "required": "true"
     },
     { "name": "Match Level",
