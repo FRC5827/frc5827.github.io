@@ -3,9 +3,11 @@ var config_data = `
   "title": "Scouting PASS 2023",
   "page_title": "Charged Up",
   "checkboxAs": "10",
+  "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter Initials",
       "code": "s",
+      "gsCol": "scouter",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
@@ -13,31 +15,34 @@ var config_data = `
     },
     { "name": "Event",
       "code": "e",
+      "gsCol": "event",
       "type": "event",
-      "defaultValue": "Sammamish HS",
-      "required": "true",
-      "disabled": "true"
+      "defaultValue": "Sammamish",
+      "required": "true"
     },
     { "name": "Match Level",
-      "code": "l",
+      "code": "Match Level",
+      "gsCol": "level",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
+        "quals": "Quals<br>",
+        "playoffs": "Double Elimination<br>",
+        "finals": "Finals"
       },
-      "defaultValue": "qm",
+      "defaultValue": "quals",
       "required": "true"
     },
     { "name": "Match #",
       "code": "m",
+      "gsCol": "matchNum",
       "type": "match",
       "min": 1,
       "max": 100,
       "required": "true"
     },
     { "name": "Robot",
-      "code": "r",
+      "code": "robot",
+      "gsCol": "robot",
       "type": "robot",
       "choices": {
         "r1": "Red-1",
@@ -50,14 +55,16 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "code": "t",
+      "code": "team number",
+      "gsCol": "teamNum",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
+      "code": "Auton Start Position",
+      "gsCol": "autoStartPosition",
+      "type": "field_image",
       "filename": "2023/field_image.png",
       "clickRestriction": "one",
       "shape": "circle 5 black red true"
@@ -65,7 +72,8 @@ var config_data = `
   ],
   "auton": [
     { "name": "Auto Scoring",
-      "code": "asg",
+      "code": "Auton Scoring",
+      "gsCol": "autoScoringGrid",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -75,33 +83,43 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Game Pieces attempted<br>(Scored and Missed)",
-      "code": "aa",
-      "type": "counter"
-    },
-    { "name": "Mobility?",
-      "code": "am",
+    { "name": "Crossed Cable",
+      "code": "acc",
+      "gsCol": "autoCrossedCable",
       "type": "bool"
     },
-    { "name": "Expected # of objects scored",
-      "code": "Expected score",
-      "type": "number"
+    { "name": "Crossed Charging Station",
+      "code": "ccs",
+      "gsCol": "autoCrossedChargingStation",
+      "type": "bool"
+    },
+    { "name": "Mobility?",
+      "code": "Mobility",
+      "gsCol": "autoMobility",
+      "type": "bool"
     },
     { "name": "Docked",
-      "code": "ad",
+      "code": "Docking
+      "gsCol": "autoDocked",
       "type":"radio",
       "choices": {
-        "d": "Docked (not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "docked": "Docked (not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted": "Attempted but failed<br>",
+        "unattempted": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "unattempted"
     }
   ],
   "teleop": [
+    { "name": "Cycle Timer",
+      "code": "Cycle Timer",
+      "gsCol": "cycleTimes",
+      "type": "cycle"
+    },
     { "name": "Grid Scoring",
-      "code": "tsg",
+      "code": "Teleop Scoring",
+      "gsCol": "gridScoring",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -109,147 +127,143 @@ var config_data = `
       "toggleClick": "true",
       "showFlip": "false",
       "showUndo": "false",
-      "shape": "circle 12 black red true"
-    },
-    { "name": "Scored in top row",
-      "code": "ScoreTop",
-      "type": "counter"
-    },
-    { "name": "Scored in middle row",
-      "code": "ScoreMidle",
-      "type": "counter"
-    },
-    { "name": "Scored in bottom row",
-      "code": "ScoreBottom",
-      "type": "counter"
+      "shape": "circle 12 black red true",
+      "cycleTimer": "tct"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
+      "code": "Feeder count",
+      "gsCol": "feedCount",
       "type": "counter"
     },
-    { "name": "Was Fed<br>Game Pieces",
-      "code": "wf",
-      "type": "bool"
-    },
     { "name": "Was Defended",
-      "code": "wd",
+      "code": "Was Defended",
+      "gsCol": "wasDefended",
       "type": "bool"
     },
-    { "name": "Who Defended this bot",
-      "code": "who",
+    { "name": "Who Defended this bot<br>(Team #)",
+      "code": "Who defended this bot",
+      "gsCol": "defenderTeamNum",
       "type": "text"
     },
     { "name": "Smart Placement<br>(creates Links)",
-      "code": "lnk",
+      "code": "links",
+      "gsCol": "smartPlacement",
       "type": "bool"
     },
-    { "name": "Floor Pickup",
-      "code": "fpu",
+    { "name": "Floor Pick UP",
+      "code": "Floor Pickup",
+      "gsCol": "floorPickUp",
       "type": "radio",
       "choices": {
-        "o": "Cones<br>",
-        "u": "Cubes<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "Cone": "Cone<br>",
+        "Cube": "Cube<br>",
+        "Both": "Both<br>",
+        "Unattempted": "Not Attempted"
       },
-      "defaultValue": "x"
-    },
-    { "name": "Substation Use",
-      "code": "sub",
-      "type": "radio",
-      "choices": {
-        "1": "Single<br>",
-        "2": "Double<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
+      "defaultValue": "Unattempted"
     }
   ],
   "endgame": [
     { "name": "Docking Timer",
-      "code": "dt",
+      "code": "Docking Timer",
+      "gsCol": "dockingTime",
       "type": "timer"
     },
     { "name": "Final Status",
-      "code": "fs",
+      "code": "Final Status",
+      "gsCol": "endgameStatus",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "parked": "Parked<br>",
+        "docked": "Docked (Not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted fail": "Attempted but failed<br>",
+        "unattempted": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "unattempted"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
-      "code": "dn",
-      "type": "counter"
-    },
-    { "name": "Links Scored<br>(by alliance)",
-      "code": "ls",
+      "code": "# of alliance robots docked
+      "gsCol": "numOfRobotsDocked",
       "type": "counter"
     }
   ],
   "postmatch": [
     { "name": "Driver Skill",
-      "code": "ds",
+      "code": "Driver Skill",
+      "gsCol": "driverSkill",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "not effective": "Not Effective<br>",
+        "average": "Average<br>",
+        "very effective": "Very Effective<br>",
+        "not observed": "Not Observed"
       },
-      "defaultValue": "x"
+      "defaultValue": "not observed"
+    },
+    { "name": "Links Scored",
+      "code": "links scored",
+      "gsCol": "linksScored",
+      "type": "counter"
     },
     { "name": "Defense Rating",
-      "code": "dr",
+      "code": "Defense Rating",
+      "gsCol": "defenseRating",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "Below Average": "Below Average<br>",
+        "Average": "Average<br>",
+        "Good": "Good<br>",
+        "Excellent": "Excellent<br>",
+        "No Defense": "Did not play defense"
       },
       "defaultValue": "x"
     },
+    { "name": "Swerve drive?",
+      "code": "Swerve Drive",
+      "gsCol": "swerveDrive",
+      "type": "bool"
+    },
     { "name": "Speed Rating",
-      "code": "sr",
+      "code": "Speed Rating",
+      "gsCol": "speedRating",
       "type": "radio",
       "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
+        "slow": "1 (slow)<br>",
+        "somewhat slow": "2<br>",
+        "average": "3<br>",
+        "above average": "4<br>",
+        "fast": "5 (fast)"
       },
       "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
-      "code": "die",
+      "code": "Died",
+      "gsCol": "diedOrImmobilized",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
+      "code": "Tipped",
+      "gsCol": "tippy",
       "type": "bool"
     },
     { "name": "Dropped Cones (>2)",
-      "code": "dc",
+      "code": "Dropped Cones",
+      "gsCol": "droppedCones",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
+      "code": "Potential Alliance partner?",
+      "gsCol": "goodPartners",
       "type": "bool"
     },
     { "name": "Comments",
-      "code": "co",
+      "code": "Comments",
+      "gsCol": "comments",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 50
     }
   ]
 }`;
