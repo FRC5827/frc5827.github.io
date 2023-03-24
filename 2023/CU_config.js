@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "Event",
       "type": "event",
-      "defaultValue": "Sammamish",
+      "defaultValue": "Sammamish HS",
       "required": "true",
       "disabled": "true"
     },
