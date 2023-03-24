@@ -26,9 +26,9 @@ var config_data = `
       "gsCol": "level",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "de": "Double Elimination<br>",
-        "f": "Finals"
+        "quals": "Quals<br>",
+        "playoffs": "Double Elimination<br>",
+        "finals": "Finals"
       },
       "defaultValue": "qm",
       "required": "true"
@@ -104,10 +104,10 @@ var config_data = `
       "gsCol": "autoDocked",
       "type":"radio",
       "choices": {
-        "d": "Docked (not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "docked": "Docked (not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted": "Attempted but failed<br>",
+        "unattempted": "Not attempted"
       },
       "defaultValue": "x"
     }
@@ -156,10 +156,10 @@ var config_data = `
       "gsCol": "floorPickUp",
       "type": "radio",
       "choices": {
-        "o": "Cone<br>",
-        "u": "Cube<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "Cone": "Cone<br>",
+        "Cube": "Cube<br>",
+        "Both": "Both<br>",
+        "Unattempted": "Not Attempted"
       },
       "defaultValue": "x"
     }
@@ -175,11 +175,11 @@ var config_data = `
       "gsCol": "endgameStatus",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "parked": "Parked<br>",
+        "docked": "Docked (Not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted fail": "Attempted but failed<br>",
+        "unattempted": "Not attempted"
       },
       "defaultValue": "x"
     },
@@ -195,10 +195,10 @@ var config_data = `
       "gsCol": "driverSkill",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "not effective": "Not Effective<br>",
+        "average": "Average<br>",
+        "very effective": "Very Effective<br>",
+        "not observed": "Not Observed"
       },
       "defaultValue": "x"
     },
@@ -212,11 +212,11 @@ var config_data = `
       "gsCol": "defenseRating",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "Below Average": "Below Average<br>",
+        "Average": "Average<br>",
+        "Good": "Good<br>",
+        "Excellent": "Excellent<br>",
+        "No Defense": "Did not play defense"
       },
       "defaultValue": "x"
     },
@@ -230,11 +230,11 @@ var config_data = `
       "gsCol": "speedRating",
       "type": "radio",
       "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
+        "slow": "1 (slow)<br>",
+        "somewhat slow": "2<br>",
+        "average": "3<br>",
+        "above average": "4<br>",
+        "fast": "5 (fast)"
       },
       "defaultValue":"3"
     },
