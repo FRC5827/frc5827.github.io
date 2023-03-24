@@ -68,6 +68,10 @@ var config_data = `
       "code": "fco",
       "type": "bool"
     },
+    { "name": "Expected # of objects scored",
+      "code": "score",
+      "type": "number"
+    },
     { "name": "Floor pickup Cubes",
       "code": "fcu",
       "type": "bool"
