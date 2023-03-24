@@ -21,7 +21,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match Level",
-      "code": "l",
+      "code": "Match Level",
       "gsCol": "level",
       "type": "level",
       "choices": {
@@ -89,7 +89,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Crossed Charging Station",
-      "code": "Crossed Charging station",
+      "code": "ccs",
       "gsCol": "autoCrossedChargingStation",
       "type": "bool"
     },
@@ -99,7 +99,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Docked",
-      "code": "Docked",
+      "code": "Docking
       "gsCol": "autoDocked",
       "type":"radio",
       "choices": {
@@ -183,7 +183,7 @@ var config_data = `
       "defaultValue": "unattempted"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
-      "code": "dn",
+      "code": "# of alliance robots docked
       "gsCol": "numOfRobotsDocked",
       "type": "counter"
     }
@@ -254,7 +254,7 @@ var config_data = `
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "Potential Alliance partner? ",
+      "code": "Potential Alliance partner?",
       "gsCol": "goodPartners",
       "type": "bool"
     },
