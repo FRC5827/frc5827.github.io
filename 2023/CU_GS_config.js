@@ -6,7 +6,7 @@ var config_data = `
   "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "Scouter Name",
+      "code": "s",
       "gsCol": "scouter",
       "type": "scouter",
       "size": 5,
@@ -14,15 +14,15 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
-      "code": "Event",
+      "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "Sammamish HS",
+      "defaultValue": "2022carv",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "Match Level",
+      "code": "l",
       "gsCol": "level",
       "type": "level",
       "choices": {
@@ -34,7 +34,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "code": "match number",
+      "code": "m",
       "gsCol": "matchNum",
       "type": "match",
       "min": 1,
@@ -42,7 +42,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Robot",
-      "code": "robot",
+      "code": "r",
       "gsCol": "robot",
       "type": "robot",
       "choices": {
@@ -56,14 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "code": "team number",
+      "code": "t",
       "gsCol": "teamNum",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "code": "Auton Start Position",
+      "code": "as",
       "gsCol": "autoStartPosition",
       "type": "field_image",
       "filename": "2023/field_image.png",
@@ -130,21 +130,6 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
-    },
-    { "name": "Scored in top row",
-      "code": "ScoreTop",
-      "gsCol": "Scored at top",
-      "type": "counter"
-    },
-    { "name": "Scored in middle row",
-      "code": "ScoreMidle",
-      "gsCol": "Scored at middle",
-      "type": "counter"
-    },
-    { "name": "Scored in bottom row",
-      "code": "ScoreBottom",
-      "gsCol": "Scored at bottom",
-      "type": "counter"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
