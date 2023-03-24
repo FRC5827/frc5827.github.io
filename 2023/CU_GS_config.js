@@ -19,6 +19,7 @@ var config_data = `
       "type": "event",
       "defaultValue": "Sammamish HS",
       "required": "true"
+      "disabled": "true"
     },
     { "name": "Match Level",
       "code": "Match Level",
