@@ -5,21 +5,21 @@ var config_data = `
   "pitConfig": "true",
   "prematch": [
     { "name": "Team Number",
-      "code": "Team number",
+      "code": "t",
       "type": "number"
     },
     { "name": "Width",
-      "code": "width",
+      "code": "wid",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Weight",
-      "code": "weight",
+      "code": "wei",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Drivetrain",
-      "code": "drivetrain",
+      "code": "drv",
       "type": "radio",
       "choices": {
         "s": "Swerve<br>",
@@ -37,7 +37,7 @@ var config_data = `
       "maxSize": 50
     },
     { "name": "Swerve Ratio",
-      "code": "swerve ration",
+      "code": "sr",
       "type": "radio",
       "choices": {
         "1": "L1 (8.14:1)<br>",
@@ -50,7 +50,7 @@ var config_data = `
       "defaultValue":"x"
     },
     { "name": "Drivetrain Motor",
-      "code": "drivetrain motor",
+      "code": "mot",
       "type": "radio",
       "choices": {
         "n": "Neo<br>",
@@ -61,11 +61,11 @@ var config_data = `
       "defaultValue":"x"
     },
     { "name": "# of Batteries",
-      "code": "# of batteries",
+      "code": "nob",
       "type": "number"
     },
     { "name": "Floor pickup Cones",
-      "code": "Floor pickup cones",
+      "code": "fco",
       "type": "bool"
     },
     { "name": "Expected # of objects scored",
@@ -85,13 +85,13 @@ var config_data = `
      "code": "Can reach mid",
      "type": "radio",
      "choices": {
-       "Yes": "Yes<br>",
-       "No": "No<br>"
+       "Ye": "Yes<br>",
+       "Na": "No<br>"
      },
-     "defaultValue":"No"
+     "defaultValue":"Na"
     },
     { "name": "Floor pickup Cubes",
-      "code": "floor pickup cubes",
+      "code": "fcu",
       "type": "bool"
     },
     { "name": "Cross Charging Station",
@@ -105,13 +105,13 @@ var config_data = `
       "maxSize": 250
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "scouting method",
+      "code": "sct",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
     { "name": "Comments",
-      "code": "comment",
+      "code": "co",
       "type": "text",
       "size": 20,
       "maxSize": 250
