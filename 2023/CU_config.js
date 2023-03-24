@@ -49,8 +49,8 @@ var config_data = `
      "code": "Can reach mid",
      "type": "radio",
      "choices": {
-       "Yes": "Yes<br>",
-       "No": "No<br>"
+       "Ye": "Yes<br>",
+       "Na": "No<br>"
      },
     "required": "true"
     },
