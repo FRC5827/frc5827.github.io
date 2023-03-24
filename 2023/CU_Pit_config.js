@@ -5,21 +5,21 @@ var config_data = `
   "pitConfig": "true",
   "prematch": [
     { "name": "Team Number",
-      "code": "t",
+      "code": "Team number",
       "type": "number"
     },
     { "name": "Width",
-      "code": "wid",
+      "code": "width",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Weight",
-      "code": "wei",
+      "code": "weight",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Drivetrain",
-      "code": "drv",
+      "code": "drivetrain",
       "type": "radio",
       "choices": {
         "s": "Swerve<br>",
@@ -37,7 +37,7 @@ var config_data = `
       "maxSize": 50
     },
     { "name": "Swerve Ratio",
-      "code": "sr",
+      "code": "swerve ration",
       "type": "radio",
       "choices": {
         "1": "L1 (8.14:1)<br>",
@@ -50,7 +50,7 @@ var config_data = `
       "defaultValue":"x"
     },
     { "name": "Drivetrain Motor",
-      "code": "mot",
+      "code": "drivetrain motor",
       "type": "radio",
       "choices": {
         "n": "Neo<br>",
