@@ -79,7 +79,7 @@ var config_data = `
        "Yes": "Yes<br>",
        "No": "No<br>"
      },
-
+      "defaultValue":"No"
     },
      {"name": "Can reach middle level of scoring",
      "code": "Can reach mid",
@@ -88,7 +88,7 @@ var config_data = `
        "Ye": "Yes<br>",
        "Na": "No<br>"
      },
-
+     "defaultValue":"Na"
     },
     { "name": "Floor pickup Cubes",
       "code": "fcu",
