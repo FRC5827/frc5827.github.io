@@ -14,12 +14,12 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Sammamish HS",
+      "defaultValue": "2023mnmi2",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "ml",
+      "code": "l",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
