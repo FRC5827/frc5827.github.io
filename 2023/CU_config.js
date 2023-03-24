@@ -79,6 +79,10 @@ var config_data = `
       "code": "aa",
       "type": "counter"
     },
+    { "name": "Expected # of objects scored",
+      "code": "Expected score",
+      "type": "number"
+    },
     { "name": "Mobility?",
       "code": "am",
       "type": "bool"
