@@ -136,6 +136,21 @@ var config_data = `
       "gsCol": "feedCount",
       "type": "counter"
     },
+    { "name": "Scored on Top Row", 
+      "code": "sctr",
+      "gsCol": "topRow",
+      "type": "counter"
+    },
+    { "name": "Scored on Middle Row", 
+      "code": "scmr",
+      "gsCol": "midRow",
+      "type": "counter"
+    },
+    { "name": "Scored on Bottom Row", 
+      "code": "scbr",
+      "gsCol": "botRow",
+      "type": "counter"
+    },
     { "name": "Was Defended",
       "code": "wd",
       "gsCol": "wasDefended",
