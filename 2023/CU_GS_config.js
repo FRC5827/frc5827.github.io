@@ -131,6 +131,21 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
+    { "name": "Scored in top row",
+      "code": "ScoreTop",
+      "gsCol": "Scored at top",
+      "type": "counter"
+    },
+    { "name": "Scored in middle row",
+      "code": "ScoreMidle",
+      "gsCol": "Scored at middle",
+      "type": "counter"
+    },
+    { "name": "Scored in bottom row",
+      "code": "ScoreBottom",
+      "gsCol": "Scored at bottom",
+      "type": "counter"
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
       "gsCol": "feedCount",
