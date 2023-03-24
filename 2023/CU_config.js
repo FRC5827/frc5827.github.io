@@ -107,12 +107,16 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Cones Scored",
-      "code": "conesScored",
+    { "name": "Top position Scored<br>",
+      "code": "topScored",
       "type": "counter"
     },
-    { "name": "Cubes Scored",
-      "code": "cubesScored",
+    { "name": "Mid position Scored<br>",
+      "code": "midScored",
+      "type": "counter"
+    },
+    { "name": "Bottom position Scored<br>",
+      "code": "bottomScored",
       "type": "counter"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
