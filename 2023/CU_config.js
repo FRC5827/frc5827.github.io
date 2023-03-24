@@ -36,6 +36,15 @@ var config_data = `
       "max": 100,
       "required": "true"
     },
+    {"name": "Can reach top level of scoring",
+     "code": "Can reach top",
+     "type": "radio",
+     "choices": {
+       "Yes": "Yes<br>",
+       "No": "No<br>"
+     },
+    "required": "true"
+    },
     { "name": "Robot",
       "code": "r",
       "type": "robot",
