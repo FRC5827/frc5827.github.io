@@ -14,7 +14,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
-      "code": "e",
+      "code": "Event",
       "gsCol": "event",
       "type": "event",
       "defaultValue": "Sammamish HS",
