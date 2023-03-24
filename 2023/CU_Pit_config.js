@@ -79,7 +79,16 @@ var config_data = `
        "Yes": "Yes<br>",
        "No": "No<br>"
      },
-    "defaultValue":"Yes"
+
+    },
+        {"name": "Can reach middle level of scoring",
+     "code": "Can reach mid",
+     "type": "radio",
+     "choices": {
+       "Yes": "Yes<br>",
+       "No": "No<br>"
+     },
+
     },
     { "name": "Floor pickup Cubes",
       "code": "fcu",
