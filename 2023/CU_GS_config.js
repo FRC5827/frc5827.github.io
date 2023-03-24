@@ -6,7 +6,7 @@ var config_data = `
   "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "s",
+      "code": "scout name",
       "gsCol": "scouter",
       "type": "scouter",
       "size": 5,
@@ -14,7 +14,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
-      "code": "e",
+      "code": "event name",
       "gsCol": "event",
       "type": "event",
       "defaultValue": "2022carv",
@@ -22,7 +22,7 @@ var config_data = `
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "l",
+      "code": "match level",
       "gsCol": "level",
       "type": "level",
       "choices": {
@@ -34,7 +34,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "code": "m",
+      "code": "match number",
       "gsCol": "matchNum",
       "type": "match",
       "min": 1,
