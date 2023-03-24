@@ -130,14 +130,19 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
-        { "name": "Cones Scored",
-      "code": "conesScored",
-      "gsCol":"conesTeleop",
+    { "name": "Top position Scored<br>",
+      "code": "topScored",
+      "gsCol": "topScore",
       "type": "counter"
     },
-    { "name": "Cubes Scored",
-      "code": "cubesScored",
-      "gsCol": "cubesTeleop",
+    { "name": "Mid position Scored<br>",
+      "code": "midScored",
+      "gsCol": "midScore",
+      "type": "counter"
+    },
+    { "name": "Bottom position Scored<br>",
+      "code": "bottomScored",
+      "gsCol": "botScore"
       "type": "counter"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
