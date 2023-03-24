@@ -5,39 +5,39 @@ var config_data = `
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "Scouter Name",
+      "code": "s",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
     { "name": "Event",
-      "code": "Event",
+      "code": "e",
       "type": "event",
       "defaultValue": "Sammamish HS",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "Match Level",
+      "code": "l",
       "type": "level",
       "choices": {
-        "quals": "Quals<br>",
-        "playoffs": "Semifinals<br>",
-        "finals": "Finals"
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
       },
-      "defaultValue": "quals",
+      "defaultValue": "qm",
       "required": "true"
     },
     { "name": "Match #",
-      "code": "match number",
+      "code": "m",
       "type": "match",
       "min": 1,
       "max": 100,
       "required": "true"
     },
     { "name": "Robot",
-      "code": "robot",
+      "code": "r",
       "type": "robot",
       "choices": {
         "r1": "Red-1",
@@ -50,13 +50,13 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "code": "team number",
+      "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "code": "Auton Start Position",
+      "code": "as",
       "type": "clickable_image",
       "filename": "2023/field_image.png",
       "clickRestriction": "one",
@@ -65,7 +65,7 @@ var config_data = `
   ],
   "auton": [
     { "name": "Auto Scoring",
-      "code": "Auton Scoring",
+      "code": "asg",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -76,15 +76,19 @@ var config_data = `
       "shape": "circle 12 black red true"
     },
     { "name": "Game Pieces attempted<br>(Scored and Missed)",
-      "code": "Autonomous piece attempts",
+      "code": "aa",
       "type": "counter"
     },
     { "name": "Mobility?",
-      "code": "Mobility",
+      "code": "am",
       "type": "bool"
     },
+    { "name": "Expected # of objects scored",
+      "code": "Expected score",
+      "type": "number"
+    },
     { "name": "Docked",
-      "code": "Docking",
+      "code": "ad",
       "type":"radio",
       "choices": {
         "d": "Docked (not Engaged)<br>",
@@ -97,7 +101,7 @@ var config_data = `
   ],
   "teleop": [
     { "name": "Grid Scoring",
-      "code": "Teleop Scoring",
+      "code": "tsg",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -107,36 +111,48 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Scored in top row",
+      "code": "ScoreTop",
+      "type": "counter"
+    },
+    { "name": "Scored in middle row",
+      "code": "ScoreMidle",
+      "type": "counter"
+    },
+    { "name": "Scored in bottom row",
+      "code": "ScoreBottom",
+      "type": "counter"
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "Feeder count",
+      "code": "tfc",
       "type": "counter"
     },
     { "name": "Was Fed<br>Game Pieces",
-      "code": "Was fed?",
+      "code": "wf",
       "type": "bool"
     },
     { "name": "Was Defended",
-      "code": "Was Defended",
+      "code": "wd",
       "type": "bool"
     },
     { "name": "Who Defended this bot",
-      "code": "Who defended this bot",
+      "code": "who",
       "type": "text"
     },
     { "name": "Smart Placement<br>(creates Links)",
-      "code": "links",
+      "code": "lnk",
       "type": "bool"
     },
     { "name": "Floor Pickup",
-      "code": "Floor Pickup",
+      "code": "fpu",
       "type": "radio",
       "choices": {
-        "Cones": "Cones<br>",
-        "Cubes": "Cubes<br>",
-        "Both": "Both<br>",
-        "Unattempted": "Not Attempted"
+        "o": "Cones<br>",
+        "u": "Cubes<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
       },
-      "defaultValue": "Unattempted"
+      "defaultValue": "x"
     },
     { "name": "Substation Use",
       "code": "sub",
@@ -144,93 +160,93 @@ var config_data = `
       "choices": {
         "1": "Single<br>",
         "2": "Double<br>",
-        "Both": "Both<br>",
-        "Unattempted": "Not Attempted"
+        "b": "Both<br>",
+        "x": "Not Attempted"
       },
-      "defaultValue": "Unattempted"
+      "defaultValue": "x"
     }
   ],
   "endgame": [
     { "name": "Docking Timer",
-      "code": "Docking Timer",
+      "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
-      "code": "Final Status",
+      "code": "fs",
       "type":"radio",
       "choices": {
-        "parked": "Parked<br>",
-        "docked": "Docked (Not Engaged)<br>",
-        "engaged": "Engaged<br>",
-        "attempted fail": "Attempted but failed<br>",
-        "unattempted": "Not attempted"
+        "p": "Parked<br>",
+        "d": "Docked (Not Engaged)<br>",
+        "e": "Engaged<br>",
+        "a": "Attempted but failed<br>",
+        "x": "Not attempted"
       },
-      "defaultValue": "unattempted"
+      "defaultValue": "x"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
-      "code": "# of alliance robots docked",
+      "code": "dn",
       "type": "counter"
     },
     { "name": "Links Scored<br>(by alliance)",
-      "code": "links scored",
+      "code": "ls",
       "type": "counter"
     }
   ],
   "postmatch": [
     { "name": "Driver Skill",
-      "code": "Driver Skill",
+      "code": "ds",
       "type": "radio",
       "choices": {
-        "not effective": "Not Effective<br>",
-        "average": "Average<br>",
-        "very effective": "Very Effective<br>",
-        "not observed": "Not Observed"
+        "n": "Not Effective<br>",
+        "a": "Average<br>",
+        "v": "Very Effective<br>",
+        "x": "Not Observed"
       },
-      "defaultValue": "not observed"
+      "defaultValue": "x"
     },
     { "name": "Defense Rating",
-      "code": "Defense Rating",
+      "code": "dr",
       "type": "radio",
       "choices": {
-        "Below average": "Below Average<br>",
-        "Average": "Average<br>",
-        "Good": "Good<br>",
-        "Excellent": "Excellent<br>",
-        "No Defense": "Did not play defense"
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
+        "x": "Did not play defense"
       },
-      "defaultValue": "No Defense"
+      "defaultValue": "x"
     },
     { "name": "Speed Rating",
-      "code": "Speed Rating",
+      "code": "sr",
       "type": "radio",
       "choices": {
-        "slow": "1 (slow)<br>",
-        "somewhat slow": "2<br>",
-        "average": "3<br>",
-        "above average": "4<br>",
-        "fast": "average"
+        "1": "1 (slow)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (fast)"
       },
       "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
-      "code": "Died",
+      "code": "die",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
-      "code": "Tipped",
+      "code": "tip",
       "type": "bool"
     },
     { "name": "Dropped Cones (>2)",
-      "code": "Dropped Cones",
+      "code": "dc",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "Potential Alliance partner?",
+      "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
-      "code": "Comments",
+      "code": "co",
       "type": "text",
       "size": 15,
       "maxSize": 55
