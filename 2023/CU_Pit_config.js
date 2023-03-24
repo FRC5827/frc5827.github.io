@@ -72,6 +72,15 @@ var config_data = `
       "code": "Expected score",
       "type": "number"
     },
+    {"name": "Can reach top level of scoring",
+     "code": "Can reach top",
+     "type": "radio",
+     "choices": {
+       "Yes": "Yes<br>",
+       "No": "No<br>"
+     },
+    "defaultValue":"Yes"
+    },
     { "name": "Floor pickup Cubes",
       "code": "fcu",
       "type": "bool"
