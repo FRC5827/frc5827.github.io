@@ -81,12 +81,12 @@ var config_data = `
      },
 
     },
-        {"name": "Can reach middle level of scoring",
+     {"name": "Can reach middle level of scoring",
      "code": "Can reach mid",
      "type": "radio",
      "choices": {
-       "Yes": "Yes<br>",
-       "No": "No<br>"
+       "Ye": "Yes<br>",
+       "Na": "No<br>"
      },
 
     },
