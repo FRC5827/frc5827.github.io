@@ -6,7 +6,7 @@ var config_data = `
   "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "s",
+      "code": "Scouter Name",
       "gsCol": "scouter",
       "type": "scouter",
       "size": 5,
@@ -17,12 +17,12 @@ var config_data = `
       "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "Sammamish HS",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
-      "code": "l",
+      "code": "Match Level",
       "gsCol": "level",
       "type": "level",
       "choices": {
@@ -34,7 +34,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "code": "m",
+      "code": "match number",
       "gsCol": "matchNum",
       "type": "match",
       "min": 1,
@@ -42,7 +42,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Robot",
-      "code": "r",
+      "code": "robot",
       "gsCol": "robot",
       "type": "robot",
       "choices": {
@@ -56,14 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "code": "t",
+      "code": "team number",
       "gsCol": "teamNum",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "code": "as",
+      "code": "Auton Start Position",
       "gsCol": "autoStartPosition",
       "type": "field_image",
       "filename": "2023/field_image.png",
