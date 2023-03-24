@@ -45,6 +45,15 @@ var config_data = `
      },
     "required": "true"
     },
+        {"name": "Can reach middle level of scoring",
+     "code": "Can reach mid",
+     "type": "radio",
+     "choices": {
+       "Yes": "Yes<br>",
+       "No": "No<br>"
+     },
+    "required": "true"
+    },
     { "name": "Robot",
       "code": "r",
       "type": "robot",
