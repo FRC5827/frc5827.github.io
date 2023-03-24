@@ -6,7 +6,7 @@ var config_data = `
   "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter Initials",
-      "code": "s",
+      "code": "Scouter Name",
       "gsCol": "scouter",
       "type": "scouter",
       "size": 5,
@@ -14,7 +14,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
-      "code": "e",
+      "code": "Event",
       "gsCol": "event",
       "type": "event",
       "defaultValue": "Sammamish HS",
@@ -33,7 +33,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "code": "m",
+      "code": "match number",
       "gsCol": "matchNum",
       "type": "match",
       "min": 1,
