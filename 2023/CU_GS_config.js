@@ -84,6 +84,21 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+        { "name": "Scored in Top Row", 
+      "code": "sctrauton",
+      "gsCol": "topRowAuton",
+      "type": "counter"
+    },
+    { "name": "Scored in Middle Row", 
+      "code": "scmrauton",
+      "gsCol": "midRowAuton",
+      "type": "counter"
+    },
+    { "name": "Scored in Bottom Row", 
+      "code": "scbrauton",
+      "gsCol": "botRowAuton",
+      "type": "counter"
+    },
     { "name": "Crossed Cable",
       "code": "acc",
       "gsCol": "autoCrossedCable",
