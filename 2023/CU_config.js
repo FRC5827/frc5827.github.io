@@ -205,11 +205,11 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "1": "Not Effective<br>",
-        "2": "Below Average<br>",
-        "3": "Decent",
-        "4": "Above Average
-        "5": "Amazing"
+        "1": "1 (poor)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (amazing)"
       },
       "defaultValue": "3"
     },
@@ -217,11 +217,11 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "1": "Not Effective<br>",
-        "2": "Below Average<br>",
-        "3": "Decent",
-        "4": "Above Average",
-        "5": "Amazing"
+        "1": "1 (poor)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (amazing)"
       },
       "defaultValue": "3"
     },
