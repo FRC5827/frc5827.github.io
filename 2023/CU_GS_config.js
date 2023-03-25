@@ -225,12 +225,13 @@ var config_data = `
       "gsCol": "driverSkill",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "1": "Not Effective<br>",
+        "2": "Below Average<br>",
+        "3": "Decent",
+        "4": "Above Average",
+        "5": "Amazing"
       },
-      "defaultValue": "x"
+      "defaultValue": "3"
     },
     { "name": "Links Scored",
       "code": "ls",
@@ -242,13 +243,13 @@ var config_data = `
       "gsCol": "defenseRating",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "1": "Not Effective<br>",
+        "2": "Below Average<br>",
+        "3": "Decent",
+        "4": "Above Average",
+        "5": "Amazing"
       },
-      "defaultValue": "x"
+      "defaultValue": "3"
     },
     { "name": "Swerve drive?",
       "code": "sd",
