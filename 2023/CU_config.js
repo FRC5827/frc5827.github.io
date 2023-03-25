@@ -75,6 +75,18 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Scored in Top Row", 
+      "code": "sctrauton",
+      "type": "counter"
+    },
+    { "name": "Scored on Middle Row", 
+      "code": "scmrauton",
+      "type": "counter"
+    },
+    { "name": "Scored on Bottom Row", 
+      "code": "scbrauton",
+      "type": "counter"
+    },
     { "name": "Game Pieces attempted<br>(Scored and Missed)",
       "code": "aa",
       "type": "counter"
