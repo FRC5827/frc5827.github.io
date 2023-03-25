@@ -99,12 +99,12 @@ var config_data = `
       "code": "ad",
       "type":"radio",
       "choices": {
-        "d": "Docked (not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "1": "Not attempted<br>",
+        "2": "Attempted docking but failed<br>",
+        "3": "Docked but not engaged<br>",
+        "4": "Engaged"
       },
-      "defaultValue": "x"
+      "defaultValue": "1"
     }
   ],
   "teleop": [
@@ -183,13 +183,12 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "1": "Parked<br>",
+        "2": "Attempted docking but failed<br>",
+        "3": "Docked but not engaged<br>",
+        "4": "Engaged"
       },
-      "defaultValue": "x"
+      "defaultValue": "1"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
