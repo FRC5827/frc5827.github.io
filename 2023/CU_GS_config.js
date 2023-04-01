@@ -17,7 +17,7 @@ var config_data = `
       "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "Sammamish HS",
+      "defaultValue": "Auburn HS",
       "required": "true",
       "disabled": "true"
     },
