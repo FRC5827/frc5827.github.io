@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Sammamish HS",
+      "defaultValue": "Auburn HS",
       "required": "true",
       "disabled": "true"
     },
