@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "Auburn HS",
+      "defaultValue": "Districts",
       "required": "true",
       "disabled": "true"
     },
